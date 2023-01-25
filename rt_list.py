@@ -10,7 +10,7 @@ def res_get(url):
     return res
 while k>=0:
     k = k+1
-    url = 'http://211.146.6.141/newvideo/bvideo/play?type=episode&id={}'.format(str(k))
+    url = 'http://xxx.xxx.xxx.xxx/newvideo/bvideo/play?type=episode&id={}'.format(str(k))
     res = res_get(url)
     soup = BeautifulSoup(res.text, 'html.parser')
     content = soup.select('body > div > div.content-wrapper > section > div:nth-child(2) > div > h4')
